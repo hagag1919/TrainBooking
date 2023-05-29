@@ -31,14 +31,15 @@
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_phoneNum = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.txt_pass = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -63,43 +64,43 @@
             // 
             this.label4.Location = new System.Drawing.Point(213, 335);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 16);
+            this.label4.Size = new System.Drawing.Size(144, 16);
             this.label4.TabIndex = 28;
             this.label4.Text = "New Phone number";
             // 
-            // textBox4
+            // txt_phoneNum
             // 
-            this.textBox4.Location = new System.Drawing.Point(363, 335);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 22);
-            this.textBox4.TabIndex = 27;
+            this.txt_phoneNum.Location = new System.Drawing.Point(363, 335);
+            this.txt_phoneNum.Name = "txt_phoneNum";
+            this.txt_phoneNum.Size = new System.Drawing.Size(190, 22);
+            this.txt_phoneNum.TabIndex = 27;
             // 
-            // textBox3
+            // txt_email
             // 
-            this.textBox3.Location = new System.Drawing.Point(363, 240);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(190, 22);
-            this.textBox3.TabIndex = 25;
+            this.txt_email.Location = new System.Drawing.Point(363, 240);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(190, 22);
+            this.txt_email.TabIndex = 25;
             // 
-            // textBox2
+            // txt_pass
             // 
-            this.textBox2.Location = new System.Drawing.Point(363, 288);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 22);
-            this.textBox2.TabIndex = 23;
+            this.txt_pass.Location = new System.Drawing.Point(363, 288);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.Size = new System.Drawing.Size(190, 22);
+            this.txt_pass.TabIndex = 23;
             // 
-            // textBox1
+            // txt_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(363, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 22);
-            this.textBox1.TabIndex = 22;
+            this.txt_name.Location = new System.Drawing.Point(363, 194);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(190, 22);
+            this.txt_name.TabIndex = 22;
             // 
             // password
             // 
             this.password.Location = new System.Drawing.Point(213, 288);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(102, 16);
+            this.password.Size = new System.Drawing.Size(121, 16);
             this.password.TabIndex = 21;
             this.password.Text = "New Password";
             // 
@@ -134,22 +135,37 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Snow;
+            this.button3.ForeColor = System.Drawing.Color.Red;
+            this.button3.Location = new System.Drawing.Point(713, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 32);
+            this.button3.TabIndex = 64;
+            this.button3.Text = "Exit";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // UpdateUserDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_phoneNum);
             this.Controls.Add(label2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_email);
             this.Controls.Add(label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_pass);
+            this.Controls.Add(this.txt_name);
             this.Controls.Add(this.password);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateUserDetails";
             this.Text = "UpdateUserDetails";
             this.ResumeLayout(false);
@@ -160,13 +176,14 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_phoneNum;
+        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.TextBox txt_pass;
+        private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label password;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
